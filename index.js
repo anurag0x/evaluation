@@ -7,7 +7,7 @@ const cors=require("cors")
 const app=express()
 app.use(express.json())
 app.use(cors())
-app.use(limiter)
+// app.use(limiter)
 app.use("/users",userrouter)
 app.use("/posts",postrouter)
 app.get("/",async(req,res)=>{
